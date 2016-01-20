@@ -137,7 +137,7 @@
 <wire x1="67.31" y1="0" x2="67.31" y2="34.29" width="0" layer="20"/>
 <wire x1="67.31" y1="34.29" x2="0" y2="34.29" width="0" layer="20"/>
 <wire x1="0" y1="34.29" x2="0" y2="0" width="0" layer="20"/>
-<text x="67.31" y="20.32" size="1.778" layer="26" rot="MR0">Shutter Driver V2.2
+<text x="63.5" y="19.05" size="1.778" layer="26" rot="MR0">Shutter Driver V2.2
 ZSS DEC 2015
 See RSI 78, 026101 (2007)</text>
 </plain>
@@ -1898,7 +1898,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="32.56" y="21.605" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="26.21" y="20.575" size="1.27" layer="27" font="vector"/>
 </element>
-<element name="U$1" library="JQI_Logo" package="JQI_LOGO_NEGATIVE-SILKSCREEN" value="" x="58.42" y="10.16" rot="MR0"/>
+<element name="U$1" library="JQI_Logo" package="JQI_LOGO_NEGATIVE-SILKSCREEN" value="" x="40.64" y="24.13" rot="MR0"/>
 <element name="U$2" library="HBridge" package="FID1MM" value="" x="1.27" y="33.02"/>
 <element name="U$3" library="HBridge" package="FID1MM" value="" x="40.64" y="33.02"/>
 <element name="U$4" library="HBridge" package="FID1MM" value="" x="1.27" y="5.08"/>
