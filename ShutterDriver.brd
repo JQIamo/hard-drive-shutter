@@ -137,8 +137,8 @@
 <wire x1="67.31" y1="0" x2="67.31" y2="34.29" width="0" layer="20"/>
 <wire x1="67.31" y1="34.29" x2="0" y2="34.29" width="0" layer="20"/>
 <wire x1="0" y1="34.29" x2="0" y2="0" width="0" layer="20"/>
-<text x="63.5" y="19.05" size="1.778" layer="26" rot="MR0">Shutter Driver V2.2
-ZSS DEC 2015
+<text x="63.5" y="19.05" size="1.778" layer="26" rot="MR0">Shutter Driver V2.3
+ZSS JAN 2016
 See RSI 78, 026101 (2007)</text>
 </plain>
 <libraries>
