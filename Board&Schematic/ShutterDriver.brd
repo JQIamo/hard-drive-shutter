@@ -137,7 +137,7 @@
 <wire x1="67.31" y1="0" x2="67.31" y2="34.29" width="0" layer="20"/>
 <wire x1="67.31" y1="34.29" x2="0" y2="34.29" width="0" layer="20"/>
 <wire x1="0" y1="34.29" x2="0" y2="0" width="0" layer="20"/>
-<text x="66.04" y="19.05" size="1.778" layer="26" font="vector" rot="MR0">Shutter Driver V2.3
+<text x="66.04" y="19.05" size="1.778" layer="26" font="vector" rot="MR0">Shutter Driver V2.3.1
 ZSS FEB 2016
 See RSI 78, 026101 (2007)</text>
 </plain>
@@ -231,21 +231,6 @@ See RSI 78, 026101 (2007)</text>
 <circle x="0" y="0" radius="6.5" width="0.127" layer="51"/>
 <text x="-3" y="7" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3" y="-8" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-</package>
-<package name="FID1MM">
-<polygon width="0.5" layer="1">
-<vertex x="-0.25" y="0" curve="90"/>
-<vertex x="0" y="-0.25" curve="90"/>
-<vertex x="0.25" y="0" curve="90"/>
-<vertex x="0" y="0.25" curve="90"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-0.8" y="0" curve="90"/>
-<vertex x="0" y="-0.8" curve="90"/>
-<vertex x="0.8" y="0" curve="90"/>
-<vertex x="0" y="0.8" curve="90"/>
-</polygon>
-<circle x="0" y="0" radius="0.889" width="0.127" layer="41"/>
 </package>
 </packages>
 </library>
@@ -1827,6 +1812,17 @@ Based on the following sources:
 </package>
 </packages>
 </library>
+<library name="fiducials-jqi">
+<packages>
+<package name="FID_1.0MM">
+<description>1 mm SMD Fiducial in 3 mm Opening</description>
+<smd name="FID" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="0.75" width="1.5" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="0.75" width="1.5" layer="41"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2073,15 +2069,15 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="26.21" y="20.575" size="1.27" layer="27" font="vector"/>
 </element>
 <element name="U$1" library="JQI_Logo" package="JQI_LOGO_NEGATIVE-SILKSCREEN" value="" x="22.86" y="21.59" rot="MR0"/>
-<element name="U$2" library="HBridge" package="FID1MM" value="" x="1.27" y="33.02"/>
-<element name="U$3" library="HBridge" package="FID1MM" value="" x="40.64" y="33.02"/>
-<element name="U$4" library="HBridge" package="FID1MM" value="" x="1.27" y="5.08"/>
-<element name="U$5" library="HBridge" package="FID1MM" value="" x="40.64" y="5.08"/>
 <element name="QR1" library="QR-git.io-vzQ3v" package="QR-HTTPS://GIT.IO/VZQ3V-LIGHT-SILK" value="QR-HTTPS://GIT.IO/VZQ3V-LIGHT-SILK" x="5.08" y="25.4" smashed="yes" rot="MR0">
 <attribute name="QR_DEST" value="https://git.io/vzQ3v" x="5.08" y="25.4" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="QR_DEST_SHORT" value="git.io/vzQ3v" x="9.271" y="20.055" size="0.889" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="NAME" x="9.271" y="29.845" size="0.889" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
+<element name="FID1" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="1.27" y="11.43"/>
+<element name="FID2" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="39.37" y="11.43"/>
+<element name="FID3" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="39.37" y="33.02"/>
+<element name="FID4" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="1.27" y="33.02"/>
 </elements>
 <signals>
 <signal name="OUT2">

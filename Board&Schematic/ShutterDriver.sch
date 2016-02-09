@@ -5656,6 +5656,63 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="fiducials-jqi">
+<packages>
+<package name="FID_1.0MM">
+<description>1 mm SMD Fiducial in 3 mm Opening</description>
+<smd name="FID" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="0.75" width="1.5" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="0.75" width="1.5" layer="41"/>
+</package>
+<package name="FID_1.5MM">
+<description>1.5 mm SMD Fiducial in 4 mm Opening</description>
+<smd name="FID" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="1" width="2" layer="29"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1" width="2" layer="41"/>
+</package>
+<package name="FID_2.0MM">
+<description>2 mm SMD Fiducial in 5mm Opening</description>
+<smd name="FID" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="1.25" width="2.5" layer="29"/>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1.25" width="2.5" layer="41"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<description>Fiducial Name w/ Part Size Value</description>
+<text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>SMD Fiducials for optical recognition systems</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1.0MM" package="FID_1.0MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1.5MM" package="FID_1.5MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2.0MM" package="FID_2.0MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5695,6 +5752,10 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="C3" library="HBridge" deviceset="CAP_" device="ESMH_VSN" value="8200 uF"/>
 <part name="C2" library="HBridge" deviceset="UVP1H_MHD" device="" value="220uF 50V BIPOLAR"/>
 <part name="QR1" library="QR-git.io-vzQ3v" deviceset="QR-HTTPS://GIT.IO/VZQ3V" device="-LIGHT-SILK"/>
+<part name="FID1" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID2" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID3" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID4" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -5724,6 +5785,10 @@ Make sure to isolate it.</text>
 <instance part="C3" gate="G$1" x="60.96" y="81.28" rot="R270"/>
 <instance part="C2" gate="G$1" x="139.7" y="73.66"/>
 <instance part="QR1" gate="G$1" x="121.92" y="38.1"/>
+<instance part="FID1" gate="G$1" x="134.62" y="43.18"/>
+<instance part="FID2" gate="G$1" x="134.62" y="38.1"/>
+<instance part="FID3" gate="G$1" x="152.4" y="43.18"/>
+<instance part="FID4" gate="G$1" x="152.4" y="38.1"/>
 </instances>
 <busses>
 </busses>
