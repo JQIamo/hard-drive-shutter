@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -28,10 +28,10 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -138,7 +138,7 @@
 <wire x1="67.31" y1="34.29" x2="0" y2="34.29" width="0" layer="20"/>
 <wire x1="0" y1="34.29" x2="0" y2="0" width="0" layer="20"/>
 <text x="63.5" y="19.05" size="1.778" layer="26" rot="MR0">Shutter Driver V2.3
-ZSS JAN 2016
+ZSS FEB 2016
 See RSI 78, 026101 (2007)</text>
 </plain>
 <libraries>
@@ -2018,7 +2018,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="26.416" y="14.859" size="1.27" layer="25"/>
 <attribute name="VALUE" x="28.194" y="16.002" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="D1" library="diode" package="SMB" value="5V6" x="26.67" y="19.05" smashed="yes" rot="R180">
+<element name="D1" library="diode" package="SMB" value="5V6 or 3V3" x="26.67" y="19.05" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.861" y="18.669" size="1.27" layer="25"/>
 <attribute name="VALUE" x="28.829" y="22.479" size="1.27" layer="27" rot="R180"/>
 </element>
@@ -2042,14 +2042,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DIGIKEY" value="A32260-ND" x="-13.97" y="15.24" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="0.635" y="15.24" size="1.27" layer="25"/>
 </element>
-<element name="R5" library="HBridge" package="SM_5" value="" x="11.43" y="29.21" smashed="yes" rot="R180">
+<element name="R5" library="HBridge" package="SM_5" value="5W 150 for 24V, 47 for 12V" x="11.43" y="29.21" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="te-connectivity" x="11.43" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TYPE" value="Wirewound" x="11.43" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="5W" x="11.43" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="20.828" y="32.004" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="19.812" y="34.29" size="1.27" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="R6" library="HBridge" package="SM_5" value="" x="11.43" y="20.32" smashed="yes">
+<element name="R6" library="HBridge" package="SM_5" value="5W 150 for 24V, 47 for 12V" x="11.43" y="20.32" smashed="yes">
 <attribute name="MANUFACTURER" value="te-connectivity" x="11.43" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="TYPE" value="Wirewound" x="11.43" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="POWER" value="5W" x="11.43" y="20.32" size="1.778" layer="27" display="off"/>
@@ -2058,22 +2058,23 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="JP1" library="pinhead" package="1X02" value="" x="62.23" y="13.208"/>
 <element name="SW1" library="HBridge" package="ATE_6M" value="" x="62.23" y="8.89" rot="R90"/>
-<element name="C3" library="HBridge" package="CAP_VSN" value="" x="52.07" y="30.48" smashed="yes" rot="R90">
+<element name="C3" library="HBridge" package="CAP_VSN" value="8200 uF" x="52.07" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.31" y="20.08" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="69.07" y="27.48" size="1.27" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="C2" library="HBridge" package="CAP-UVP" value="" x="29.21" y="28.575" smashed="yes">
+<element name="C2" library="HBridge" package="CAP-UVP" value="220uF 50V BIPOLAR" x="29.21" y="28.575" smashed="yes">
 <attribute name="NAME" x="32.56" y="21.605" size="1.27" layer="25" font="vector"/>
 <attribute name="VALUE" x="26.21" y="20.575" size="1.27" layer="27" font="vector"/>
 </element>
-<element name="U$1" library="JQI_Logo" package="JQI_LOGO_NEGATIVE-SILKSCREEN" value="" x="40.64" y="24.13" rot="MR0"/>
+<element name="U$1" library="JQI_Logo" package="JQI_LOGO_NEGATIVE-SILKSCREEN" value="" x="22.86" y="21.59" rot="MR0"/>
 <element name="U$2" library="HBridge" package="FID1MM" value="" x="1.27" y="33.02"/>
 <element name="U$3" library="HBridge" package="FID1MM" value="" x="40.64" y="33.02"/>
 <element name="U$4" library="HBridge" package="FID1MM" value="" x="1.27" y="5.08"/>
 <element name="U$5" library="HBridge" package="FID1MM" value="" x="40.64" y="5.08"/>
-<element name="QR1" library="QR-git.io-vzQ3v" package="QR-HTTPS://GIT.IO/VZQ3V-LIGHT-SILK" value="QR-HTTPS://GIT.IO/VZQ3V-LIGHT-SILK" x="11.43" y="25.4" rot="MR0">
-<attribute name="QR_DEST" value="https://git.io/vzQ3v" x="11.43" y="25.4" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="QR_DEST_SHORT" value="git.io/vzQ3v" x="11.43" y="25.4" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="QR1" library="QR-git.io-vzQ3v" package="QR-HTTPS://GIT.IO/VZQ3V-LIGHT-SILK" value="QR-HTTPS://GIT.IO/VZQ3V-LIGHT-SILK" x="5.08" y="25.4" smashed="yes" rot="MR0">
+<attribute name="QR_DEST" value="https://git.io/vzQ3v" x="5.08" y="25.4" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="QR_DEST_SHORT" value="git.io/vzQ3v" x="9.271" y="20.055" size="0.889" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="9.271" y="29.845" size="0.889" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 </elements>
 <signals>
