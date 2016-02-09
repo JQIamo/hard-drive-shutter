@@ -5,7 +5,7 @@ Short-URL: [http://git.io/vzQ3v](http://git.io/vzQ3v)
 
 ## Ordering Boards:
 
-- v2.3 Boards are orderable from OSHPark as [ShutterDriverV2.3](https://oshpark.com/shared_projects/EIEmdKBs), and contain no electrical changes, so should need no new testing.  All changes between v2.2 and v2.3 were either cosmetic or changes in component position.
+- v2.3 Boards are orderable from OSHPark as [ShutterDriverV2.3](https://oshpark.com/shared_projects/EIEmdKBs), and contain no electrical changes, so should need no new testing.  All changes between v2.2 and v2.3 were either cosmetic or changes in component position. Cost is $17.85 per 3 boards, ($5.95 each).
 - v2.2 Boards are orderable from OSHPark as [ShutterDriver](https://oshpark.com/shared_projects/dwfRqreU), and has been tested and confirmed to work by the RbDisorder group. Cost is $17.85 per 3 boards, ($5.95 each).
 
 ## BOM/Parts List
