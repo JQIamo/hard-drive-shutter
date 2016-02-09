@@ -5671,21 +5671,21 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0603" value="3k"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="D1" library="diode" deviceset="ZENER-DIODE" device="SMB" value="5V6"/>
+<part name="D1" library="diode" deviceset="ZENER-DIODE" device="SMB" value="5V6 or 3V3"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="C4" library="rlc-jqi" deviceset="CAP" device="0603" value="10nF"/>
 <part name="C5" library="rlc-jqi" deviceset="CAP" device="0603" value="10nF"/>
 <part name="J1-TRIGGER" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="J2-SHUTTER" library="connector-jqi" deviceset="BNC" device="-H"/>
-<part name="R5" library="HBridge" deviceset="SM" device="5" technology="W"/>
-<part name="R6" library="HBridge" deviceset="SM" device="5" technology="W"/>
+<part name="R5" library="HBridge" deviceset="SM" device="5" technology="W" value="5W 150 for 24V, 47 for 12V"/>
+<part name="R6" library="HBridge" deviceset="SM" device="5" technology="W" value="5W 150 for 24V, 47 for 12V"/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="SW1" library="HBridge" deviceset="ATE1E-6M3-10-Z" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C3" library="HBridge" deviceset="CAP_" device="ESMH_VSN"/>
-<part name="C2" library="HBridge" deviceset="UVP1H_MHD" device=""/>
+<part name="C3" library="HBridge" deviceset="CAP_" device="ESMH_VSN" value="8200 uF"/>
+<part name="C2" library="HBridge" deviceset="UVP1H_MHD" device="" value="220uF 50V BIPOLAR"/>
 <part name="QR1" library="QR-git.io-vzQ3v" deviceset="QR-HTTPS://GIT.IO/VZQ3V" device="-LIGHT-SILK"/>
 </parts>
 <sheets>
@@ -5705,16 +5705,16 @@ Make sure to isolate it.</text>
 <instance part="C4" gate="G$1" x="104.14" y="68.58" rot="R90"/>
 <instance part="C5" gate="G$1" x="104.14" y="50.8" rot="R90"/>
 <instance part="J1-TRIGGER" gate="G$1" x="17.78" y="66.04"/>
-<instance part="J2-SHUTTER" gate="G$1" x="154.94" y="63.5" rot="MR0"/>
+<instance part="J2-SHUTTER" gate="G$1" x="187.96" y="63.5" rot="MR0"/>
 <instance part="R5" gate="G$1" x="119.38" y="63.5"/>
-<instance part="R6" gate="G$1" x="132.08" y="63.5"/>
+<instance part="R6" gate="G$1" x="152.4" y="63.5"/>
 <instance part="JP1" gate="G$1" x="35.56" y="88.9"/>
 <instance part="P+2" gate="VCC" x="25.4" y="96.52"/>
 <instance part="GND2" gate="1" x="25.4" y="83.82"/>
 <instance part="SW1" gate="G$1" x="33.02" y="66.04"/>
 <instance part="GND3" gate="1" x="55.88" y="71.12"/>
 <instance part="C3" gate="G$1" x="60.96" y="81.28" rot="R270"/>
-<instance part="C2" gate="G$1" x="127" y="71.12"/>
+<instance part="C2" gate="G$1" x="139.7" y="73.66"/>
 <instance part="QR1" gate="G$1" x="121.92" y="38.1"/>
 </instances>
 <busses>
@@ -5728,24 +5728,24 @@ Make sure to isolate it.</text>
 <wire x1="104.14" y1="55.88" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 <junction x="104.14" y="58.42"/>
 <pinref part="J2-SHUTTER" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="60.96" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="60.96" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="60.96" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OUT1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT1"/>
 <wire x1="93.98" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
-<junction x="109.22" y="63.5"/>
+<wire x1="104.14" y1="63.5" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
+<junction x="111.76" y="63.5"/>
 <pinref part="C4" gate="G$1" pin="P$1"/>
 <junction x="104.14" y="63.5"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="63.5" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="63.5" x2="114.3" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="71.12" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="73.66" x2="111.76" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -5847,14 +5847,14 @@ Make sure to isolate it.</text>
 </net>
 <net name="SHUTTERPIN" class="0">
 <segment>
-<wire x1="142.24" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
-<junction x="142.24" y="63.5"/>
+<wire x1="172.72" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91"/>
+<junction x="172.72" y="63.5"/>
 <pinref part="J2-SHUTTER" gate="G$1" pin="1"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="71.12" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="73.66" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5881,7 +5881,7 @@ Make sure to isolate it.</text>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="63.5" x2="147.32" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
