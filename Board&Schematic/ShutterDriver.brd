@@ -1831,6 +1831,8 @@ Based on the following sources:
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="24V Supply"/>
+<variantdef name="12V Supply"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -2042,19 +2044,23 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DIGIKEY" value="A32260-ND" x="-13.97" y="15.24" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="0.635" y="15.24" size="1.27" layer="25"/>
 </element>
-<element name="R5" library="HBridge" package="SM_5" value="5W 150 for 24V, 47 for 12V" x="11.43" y="29.21" smashed="yes" rot="R180">
+<element name="R5" library="HBridge" package="SM_5" value="5W Variant-Dependent" x="11.43" y="29.21" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="te-connectivity" x="11.43" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TYPE" value="Wirewound" x="11.43" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="5W" x="11.43" y="29.21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="20.828" y="32.004" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="19.812" y="34.29" size="1.27" layer="27" font="vector" ratio="10" rot="R180"/>
+<variant name="24V Supply" value="5W 150"/>
+<variant name="12V Supply" value="5W 47"/>
 </element>
-<element name="R6" library="HBridge" package="SM_5" value="5W 150 for 24V, 47 for 12V" x="11.43" y="20.32" smashed="yes">
+<element name="R6" library="HBridge" package="SM_5" value="5W Variant-Dependent" x="11.43" y="20.32" smashed="yes">
 <attribute name="MANUFACTURER" value="te-connectivity" x="11.43" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="TYPE" value="Wirewound" x="11.43" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="POWER" value="5W" x="11.43" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="20.828" y="23.114" size="1.27" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="3.048" y="15.24" size="1.27" layer="27" font="vector" ratio="10"/>
+<variant name="24V Supply" value="5W 150"/>
+<variant name="12V Supply" value="5W 47"/>
 </element>
 <element name="JP1" library="pinhead" package="1X02" value="" x="62.23" y="13.208"/>
 <element name="SW1" library="HBridge" package="ATE_6M" value="" x="62.23" y="8.89" rot="R90"/>

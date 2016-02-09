@@ -5660,6 +5660,8 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="24V Supply"/>
+<variantdef name="12V Supply"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -5677,8 +5679,14 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <part name="C5" library="rlc-jqi" deviceset="CAP" device="0603" value="10nF"/>
 <part name="J1-TRIGGER" library="connector-jqi" deviceset="BNC" device="-H"/>
 <part name="J2-SHUTTER" library="connector-jqi" deviceset="BNC" device="-H"/>
-<part name="R5" library="HBridge" deviceset="SM" device="5" technology="W" value="5W 150 for 24V, 47 for 12V"/>
-<part name="R6" library="HBridge" deviceset="SM" device="5" technology="W" value="5W 150 for 24V, 47 for 12V"/>
+<part name="R5" library="HBridge" deviceset="SM" device="5" technology="W" value="5W Variant-Dependent">
+<variant name="24V Supply" value="5W 150"/>
+<variant name="12V Supply" value="5W 47"/>
+</part>
+<part name="R6" library="HBridge" deviceset="SM" device="5" technology="W" value="5W Variant-Dependent">
+<variant name="24V Supply" value="5W 150"/>
+<variant name="12V Supply" value="5W 47"/>
+</part>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
