@@ -18,6 +18,13 @@ Tested combinations:
 - 12V supply with 47 Ohms (each)
 - 24V supply with 150 Ohms (each)
 
+## Driver Lifetime ##
+
+A test board was run on a 1/2 Hz cycle (opening every 2 seconds, so there is a state change every second) for 21 hours and 15 minutes without failure.
+This comes to over 38,000 full actuation cycles (or over 76,000 individual open/close motions) without failure.
+Experimental cycles typically have a much lower overall duty cycle (short times between open an close separated by long dwells in one state or the other).
+This is the only direct lifetime testing that I'm aware of.
+
 ## Ordering Boards ##
 - **v2.3.1** Boards are orderable for OSHPark as [ShutterDriverV2.3.1](https://oshpark.com/shared_projects/Ych6aunu), and contain no electrical changes, so should need no new testing. The only updated feature relative to v2.3 is the fiducials position and name. Cost is $17.85 per 3 boards, ($5.95 each).
 - **v2.3** Boards are orderable from OSHPark as [ShutterDriverV2.3](https://oshpark.com/shared_projects/EIEmdKBs), and contain no electrical changes, so should need no new testing.  All changes between v2.2 and v2.3 were either cosmetic or changes in component position. Cost is $17.85 per 3 boards, ($5.95 each). **These boards correspond to tag v2.3-printed, not v2.3**
