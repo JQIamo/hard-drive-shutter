@@ -35,8 +35,27 @@ This is the only direct lifetime testing that I'm aware of.
 - v2.2 Stencil file is in the repository, but there is already a stainless steel stencil at the JQI.  Contact the Rb Disorder lab in the CSS Building to borrow it.
 
 ## BOM/Parts List ##
+BOM listed here is a sample only, that is, any listed part can be replaced with an equivalent replacement part.
 
-TODO
+For 2.3._x_:
+
+| Qty. |Part                      | Man. Part No.      | Mouser Part No.      | Digikey Part No.    |
+|------|--------------------------|--------------------|----------------------|---------------------|
+| 1    | C2                       | UVP1H221MHD        | 647-UVP1H221MHD      | 493-6086-ND         |
+| 1    | C3                       | ESMH630VSN822MR45T | 661-ESMH630N822MR45T | 565-2697-ND         |
+| 2    | C4, C5                   | HMK107B7103KA-T    | 963-HMK107B7103KA-T  | 587-1446-1-ND       |
+| 1    | D1 (3.3V)<sup>1</sup>    | 1SMB5913BT3G       | 863-1SMB5913BT3G     | 1SMB5913BT3GOSCT-ND |
+| 1    | D1 (5.6V)<sup>1</sup>    | 1SMB5919BT3G       | 863-1SMB5919BT3G     | 1SMB5919BT3GOSCT-ND |
+| 2    | J1, J2                   | 5227161-7          | 571-5227161-7        | A32260-ND           |
+| 1    | JP1                      | 22-23-2021         | 538-22-23-2021       | WM4200-ND           |
+| 1    | R2                       | ESR03EZPJ302       | _Any equivalent part_| RHM3KDCT-ND         |
+| 2    | R3, R4                   | ESR03EZPF1002      | _Any equivalent part_| RHM10KADCT-ND       |
+| 2    | R5, R6 (12V)<sup>1</sup> | SMW547RJT          | 279-SMW547RJT        | A106026CT-ND        |
+| 2    | R5, R6 (24V)<sup>1</sup> | SMW5150RJT         | 279-SMW5150RJT       | A103640CT-ND        |
+| 1    | SW1                      | ATE1E-6M3-10-Z     | _Does not carry part_| 563-1766-ND         |
+| 1    | U1                       | LMD18200T/NOPB     | 926-LMD18200T/NOPB   | LMD18200T/NOPB-ND   |
+
+<sup>1</sup> You need to order _only_ the line corresponding to the option you're using.
 
 ## Original Paper ##
 Enhanced laser shutter using a hard disk drive rotary voice-coil actuator
