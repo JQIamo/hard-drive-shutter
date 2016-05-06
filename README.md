@@ -18,6 +18,10 @@ Tested combinations:
 - 12V supply with 47 Ohms (each)
 - 24V supply with 150 Ohms (each)
 
+### TwinAx vs BNC for *J2* ###
+
+*J2* could be swapped out for TwinAx connector, removing the problem of the shield being above ground potential for one of the shutter states.  This option has not been implemented as of v2.3.1.
+
 ## Driver Lifetime ##
 
 A test board was run on a 1/2 Hz cycle (opening every 2 seconds, so there is a state change every second) for 21 hours and 15 minutes without failure.
